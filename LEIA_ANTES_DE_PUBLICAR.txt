@@ -1,0 +1,24 @@
+MEDELLÍN STORE — FRONTEND VERCEL LIMPO
+
+ESTA PASTA É SOMENTE O SITE.
+Ela NÃO possui server.js, package.json, .env nem backend.
+
+IMPORTANTE SE O SEU PROJETO VERCEL VEM DO GITHUB:
+Antes de publicar esta versão, APAGUE da raiz do repositório antigo, se existirem:
+- server.js
+- package.json
+- package-lock.json
+- pasta api
+- pasta backend / backend-local
+- qualquer vercel.json antigo
+
+Depois envie SOMENTE o conteúdo desta pasta frontend para a raiz do repositório.
+Na Vercel, faça um novo Redeploy após o commit.
+
+Se continuar aparecendo "Cannot GET /", significa que o deploy ainda está usando os arquivos antigos ou outra branch/root directory.
+
+BACKEND TEMPORÁRIO NO PC:
+Abra sua loja com:
+https://SEU-LINK-VERCEL/?api=https://SEU-TUNNEL.trycloudflare.com
+
+O link da Vercel pode mudar: o frontend não depende de um domínio Vercel fixo.

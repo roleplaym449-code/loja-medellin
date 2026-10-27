@@ -1,5 +1,5 @@
 {
-  "cleanUrls": false,
+  "version": 2,
   "headers": [
     {
       "source": "/(.*)",
@@ -8,5 +8,9 @@
         { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
       ]
     }
+  ],
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/.*", "dest": "/index.html" }
   ]
 }
