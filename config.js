@@ -1,11 +1,12 @@
 // Medellín Store — configuração do frontend
-// DURANTE OS TESTES NO PC:
-// 1) Abra o Cloudflare Tunnel para http://127.0.0.1:3000
-// 2) Copie a URL HTTPS gerada (ex.: https://abc.trycloudflare.com)
-// 3) Cole abaixo e publique este arquivo junto com a loja na Vercel.
 //
-// QUANDO MOVER PARA A VPS:
-// troque apenas esta URL pelo endereço HTTPS fixo do backend.
+// TESTE NO PC + CLOUDFLARE TUNNEL:
+// Você NÃO precisa editar este arquivo toda vez que o link do tunnel mudar.
+// Abra a loja uma vez assim:
+//   https://SEU-SITE.vercel.app/?api=https://SEU-TUNNEL.trycloudflare.com
+// A URL do backend fica salva neste navegador.
+//
+// Para limpar/trocar depois, abra novamente com ?api=NOVA_URL.
 window.MEDELLIN_CONFIG = Object.freeze({
-  API_BASE_URL: 'https://COLE-AQUI-SEU-TUNNEL.trycloudflare.com'
+  DEFAULT_API_BASE_URL: ''
 });

@@ -1,11 +1,22 @@
 const API_BASE_URL = (() => {
-  const configured = String(window.MEDELLIN_CONFIG?.API_BASE_URL || '').trim().replace(/\/$/, '');
-  const isPlaceholder = !configured || configured.includes('COLE-AQUI');
-  if (!isPlaceholder) return configured;
-  // Se frontend e backend estiverem no mesmo servidor, chamadas relativas continuam funcionando.
-  if (['localhost', '127.0.0.1'].includes(location.hostname)) return '';
-  return configured;
+  const params = new URLSearchParams(window.location.search);
+  const fromQuery = String(params.get('api') || '').trim().replace(/\/$/, '');
+
+  // Durante os testes, você pode trocar o Cloudflare Tunnel sem republicar
+  // a Vercel. Basta abrir: https://seu-site.vercel.app/?api=https://novo.trycloudflare.com
+  if (fromQuery && /^https:\/\//i.test(fromQuery)) {
+    localStorage.setItem('medellin_api_base_url', fromQuery);
+  }
+
+  const saved = String(localStorage.getItem('medellin_api_base_url') || '').trim().replace(/\/$/, '');
+  const configured = String(window.MEDELLIN_CONFIG?.DEFAULT_API_BASE_URL || '').trim().replace(/\/$/, '');
+  const chosen = fromQuery || saved || configured;
+
+  // Se frontend e backend estiverem juntos localmente, chamadas relativas funcionam.
+  if (!chosen && ['localhost', '127.0.0.1'].includes(location.hostname)) return '';
+  return chosen;
 })();
+
 
 function apiUrl(path){
   if (API_BASE_URL === '') return path;

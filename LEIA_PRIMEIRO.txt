@@ -1,0 +1,29 @@
+MEDELLÍN LOJA V9 — CORREÇÃO VERCEL + BACKEND LOCAL
+
+O erro "Cannot GET /" acontecia porque frontend e backend estavam sendo publicados juntos.
+Nesta versão eles estão separados.
+
+1) VERCEL
+Publique SOMENTE a raiz deste projeto (onde estão index.html, styles.css, script.js, config.js, assets e vercel.json).
+NÃO mova a pasta backend-local para a raiz do projeto da Vercel.
+
+2) BACKEND NO SEU PC
+Entre em backend-local e execute INICIAR_BACKEND.bat.
+Depois confira: http://127.0.0.1:3000/api/health
+
+3) CLOUDFLARE TUNNEL
+Execute backend-local/ABRIR_TUNNEL.bat.
+Copie o HTTPS gerado, exemplo:
+https://abc-def.trycloudflare.com
+
+4) NÃO PRECISA REPUBLICAR A VERCEL QUANDO O TUNNEL MUDAR
+Abra sua loja assim uma vez:
+https://loja-medillin.vercel.app/?api=https://abc-def.trycloudflare.com
+
+A loja salva esse endereço do backend no navegador. Se o tunnel mudar, abra de novo com ?api=NOVA_URL.
+
+5) WEBHOOK MERCADO PAGO
+Use:
+https://abc-def.trycloudflare.com/api/webhook/mercadopago
+
+Quando mover para a VPS, troque o tunnel pelo domínio HTTPS fixo do backend.
