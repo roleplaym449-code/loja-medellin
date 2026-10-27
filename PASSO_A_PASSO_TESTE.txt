@@ -1,0 +1,19 @@
+MEDELLIN STORE V8 - TESTE NO PC
+
+1. No HeidiSQL, faça backup e execute database.sql no banco medellin.
+2. Execute INICIAR_LOJA.bat.
+3. Execute TESTAR_BACKEND.bat e confirme que aparece ok: true.
+4. Instale cloudflared ou coloque cloudflared.exe nesta pasta.
+5. Execute ABRIR_TUNNEL.bat.
+6. Copie a URL https://xxxxx.trycloudflare.com.
+7. Cole essa URL em config.js -> API_BASE_URL.
+8. Cole a mesma URL no .env -> PUBLIC_BASE_URL.
+9. Reinicie INICIAR_LOJA.bat.
+10. Publique index.html, styles.css, script.js, config.js e assets na Vercel.
+11. No Mercado Pago, configure:
+    https://xxxxx.trycloudflare.com/api/webhook/mercadopago
+12. Copie a Assinatura Secreta do webhook para MP_WEBHOOK_SECRET no .env.
+13. Reinicie o backend.
+14. Faça um teste com o menor pacote e confira accounts.Gemstone no HeidiSQL.
+
+IMPORTANTE: nunca envie .env para a Vercel/GitHub público.

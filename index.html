@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja Medellín Roleplay</title>
+  <meta name="description" content="Loja oficial da Medellín Roleplay">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#" class="brand">
+      <span class="brand-mark">M</span>
+      <span><b>MEDELLÍN</b><small>ROLEPLAY</small></span>
+    </a>
+    <label class="search">
+      <span>⌕</span>
+      <input id="search" type="search" placeholder="Buscar um produto pelo nome">
+    </label>
+    <button class="cart-button" id="cartBtn">🛒 <span id="cartCount">0</span></button>
+  </header>
+
+  <section class="hero">
+    <img src="assets/medellin-cover.jpg" alt="Medellín Roleplay">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="kicker">LOJA OFICIAL</span>
+      <h1>MEDELLÍN <em>STORE</em></h1>
+      <p>Diamantes para sua jornada na Medellín Roleplay.</p>
+      <div class="trust">
+        <span>🛡️ Compra confiável</span>
+        <span>💎 Melhores valores</span>
+        <span>⚡ Entrega rápida</span>
+        <span>🎧 Suporte dedicado</span>
+      </div>
+    </div>
+  </section>
+
+  <nav class="tabs">
+    <button class="tab" data-filter="all">CATÁLOGO</button>
+    <button class="tab active" data-filter="diamantes">DIAMANTES</button>
+    <button class="tab" data-filter="outros">OUTROS</button>
+  </nav>
+
+  <section class="notice">
+    <span>💎</span>
+    <div>
+      <b>VALOR OFICIAL</b>
+      <p><strong>200 Diamantes = R$ 1,00</strong> • Todos os pacotes seguem exatamente a mesma proporção.</p>
+    </div>
+  </section>
+
+  <main class="catalog catalog-upgraded">
+    <div class="section-title">
+      <div><span>MEDELLÍN ROLEPLAY</span><h2 id="catalogTitle">Pacotes de Diamantes</h2></div>
+      <p id="catalogSubtitle">Escolha o pacote ideal para você.</p>
+    </div>
+    <div class="grid" id="products">
+      
+    <article class="product-card" data-category="diamantes" data-name="200 diamantes">
+      
+      <div class="product-image"><img src="assets/diamante-1.jpg" alt="Pacote de diamantes Medellín"></div>
+      <div class="product-info">
+        <div class="title-row">
+          <h3>200 Diamantes</h3>
+          <strong>R$ 1.00</strong>
+        </div>
+        <p>Receba <b>200</b> Diamantes para utilizar na Medellín Roleplay.</p>
+        <button class="buy" data-product-id="d200" data-diamonds="200" data-price="1">
+          Adicionar ao carrinho
+        </button>
+      </div>
+    </article>
+    
+    <article class="product-card" data-category="diamantes" data-name="1000 diamantes">
+      
+      <div class="product-image"><img src="assets/diamante-2.jpg" alt="Pacote de diamantes Medellín"></div>
+      <div class="product-info">
+        <div class="title-row">
+          <h3>1.000 Diamantes</h3>
+          <strong>R$ 5.00</strong>
+        </div>
+        <p>Receba <b>1.000</b> Diamantes para utilizar na Medellín Roleplay.</p>
+        <button class="buy" data-product-id="d1000" data-diamonds="1000" data-price="5">
+          Adicionar ao carrinho
+        </button>
+      </div>
+    </article>
+    
+    <article class="product-card" data-category="diamantes" data-name="5000 diamantes">
+      
+      <div class="product-image"><img src="assets/diamante-3.jpg" alt="Pacote de diamantes Medellín"></div>
+      <div class="product-info">
+        <div class="title-row">
+          <h3>5.000 Diamantes</h3>
+          <strong>R$ 25.00</strong>
+        </div>
+        <p>Receba <b>5.000</b> Diamantes para utilizar na Medellín Roleplay.</p>
+        <button class="buy" data-product-id="d5000" data-diamonds="5000" data-price="25">
+          Adicionar ao carrinho
+        </button>
+      </div>
+    </article>
+    
+    <article class="product-card" data-category="diamantes" data-name="10000 diamantes">
+      
+      <div class="product-image"><img src="assets/diamante-4.jpg" alt="Pacote de diamantes Medellín"></div>
+      <div class="product-info">
+        <div class="title-row">
+          <h3>10.000 Diamantes</h3>
+          <strong>R$ 50.00</strong>
+        </div>
+        <p>Receba <b>10.000</b> Diamantes para utilizar na Medellín Roleplay.</p>
+        <button class="buy" data-product-id="d10000" data-diamonds="10000" data-price="50">
+          Adicionar ao carrinho
+        </button>
+      </div>
+    </article>
+    
+    <article class="product-card popular" data-category="diamantes" data-name="30000 diamantes">
+      <span class="badge">MAIS VENDIDO</span>
+      <div class="product-image"><img src="assets/diamante-5.jpg" alt="Pacote de diamantes Medellín"></div>
+      <div class="product-info">
+        <div class="title-row">
+          <h3>30.000 Diamantes</h3>
+          <strong>R$ 150.00</strong>
+        </div>
+        <p>Receba <b>30.000</b> Diamantes para utilizar na Medellín Roleplay.</p>
+        <button class="buy" data-product-id="d30000" data-diamonds="30000" data-price="150">
+          Adicionar ao carrinho
+        </button>
+      </div>
+    </article>
+    
+    <article class="product-card" data-category="diamantes" data-name="50000 diamantes">
+      
+      <div class="product-image"><img src="assets/diamante-6.jpg" alt="Pacote de diamantes Medellín"></div>
+      <div class="product-info">
+        <div class="title-row">
+          <h3>50.000 Diamantes</h3>
+          <strong>R$ 250.00</strong>
+        </div>
+        <p>Receba <b>50.000</b> Diamantes para utilizar na Medellín Roleplay.</p>
+        <button class="buy" data-product-id="d50000" data-diamonds="50000" data-price="250">
+          Adicionar ao carrinho
+        </button>
+      </div>
+    </article>
+    
+    <article class="product-card" data-category="diamantes" data-name="100000 diamantes">
+      
+      <div class="product-image"><img src="assets/diamante-7.jpg" alt="Pacote de diamantes Medellín"></div>
+      <div class="product-info">
+        <div class="title-row">
+          <h3>100.000 Diamantes</h3>
+          <strong>R$ 500,00</strong>
+        </div>
+        <p>Receba <b>100.000</b> Diamantes para utilizar na Medellín Roleplay.</p>
+        <button class="buy" data-product-id="d100000" data-diamonds="100000" data-price="500">
+          Adicionar ao carrinho
+        </button>
+      </div>
+    </article>
+    
+    <article class="product-card" data-category="diamantes" data-name="300000 diamantes">
+      
+      <div class="product-image"><img src="assets/diamante-8.jpg" alt="Pacote de diamantes Medellín"></div>
+      <div class="product-info">
+        <div class="title-row">
+          <h3>300.000 Diamantes</h3>
+          <strong>R$ 1.500,00</strong>
+        </div>
+        <p>Receba <b>300.000</b> Diamantes para utilizar na Medellín Roleplay.</p>
+        <button class="buy" data-product-id="d300000" data-diamonds="300000" data-price="1500">
+          Adicionar ao carrinho
+        </button>
+      </div>
+    </article>
+    
+
+    <article class="product-card" data-category="outros" data-name="troca de sobrenome">
+      <div class="service-art id-card">
+        <div class="id-photo">👤</div>
+        <div class="id-lines"><b>MEDELLÍN</b><span>IDENTIDADE</span><i></i><i></i><i></i></div>
+      </div>
+      <div class="product-info">
+        <div class="title-row"><h3>Troca de Sobrenome</h3><strong>R$ 50,00</strong></div>
+        <p>Solicite a alteração de sobrenome do seu personagem. Após a compra, abra um ticket para atendimento.</p>
+        <button class="buy" data-product="Troca de Sobrenome" data-price="50">Adicionar ao carrinho</button>
+      </div>
+    </article>
+
+    <article class="product-card featured-other" data-category="outros" data-name="blip de helicóptero">
+      <span class="badge gold-badge">DESTAQUE</span>
+      <div class="service-art heli-art">
+        <div class="helipad">H</div>
+        <div class="heli">🚁</div>
+        <div class="cityline"></div>
+      </div>
+      <div class="product-info">
+        <div class="title-row"><h3>Blip de Helicóptero</h3><strong>R$ 500,00</strong></div>
+        <p>1 Blip de Helicóptero para sua organização. A instalação será realizada pela equipe da Medellín.</p>
+        <button class="buy" data-product="Blip de Helicóptero" data-price="500">Adicionar ao carrinho</button>
+      </div>
+    </article>
+    </div>
+  </main>
+
+  <footer>
+    <div><b>MEDELLÍN ROLEPLAY</b><span>Loja oficial da comunidade</span></div>
+    <div><span>🔒 Site seguro</span><span>•</span><span>Privacidade garantida</span></div>
+  </footer>
+
+  <aside class="drawer" id="drawer">
+    <div class="drawer-head">
+      <div><small>SEU CARRINHO</small><h2>Finalizar compra</h2></div>
+      <button id="closeCart">✕</button>
+    </div>
+    <div id="cartItems" class="cart-items">
+      <p class="empty">Seu carrinho está vazio.</p>
+    </div>
+    <div class="cart-total">
+      <span>Total</span>
+      <strong id="cartTotal">R$ 0,00</strong>
+    </div>
+    <button id="checkout" class="checkout">IR PARA PAGAMENTO</button>
+    <small class="checkout-note">Pagamento via PIX Mercado Pago. Os diamantes são liberados após a confirmação.</small>
+  </aside>
+  <div class="shade" id="shade"></div>
+
+
+  <section class="payment-modal" id="paymentModal" aria-hidden="true">
+    <div class="payment-card">
+      <button class="payment-close" id="paymentClose" aria-label="Fechar">✕</button>
+      <div id="buyerStep">
+        <span class="kicker">PIX MERCADO PAGO</span>
+        <h2>Identifique seu personagem</h2>
+        <p class="payment-subtitle">Confira os dados antes de gerar o QR Code. A entrega será vinculada ao passaporte informado.</p>
+        <label>Passaporte
+          <input id="buyerPassport" inputmode="text" maxlength="32" placeholder="Ex.: 1234" autocomplete="off">
+        </label>
+        <label>Nick no jogo
+          <input id="buyerNick" maxlength="60" placeholder="Ex.: Tom Medellín" autocomplete="off">
+        </label>
+        <label>E-mail para o pagamento
+          <input id="buyerEmail" type="email" maxlength="160" placeholder="voce@email.com" autocomplete="email">
+        </label>
+        <div class="payment-summary"><span>Total</span><strong id="paymentTotal">R$ 0,00</strong></div>
+        <button class="checkout" id="generatePix">GERAR QR CODE PIX</button>
+        <small class="form-error" id="paymentError"></small>
+      </div>
+      <div id="pixStep" hidden>
+        <span class="kicker">PAGAMENTO GERADO</span>
+        <h2>Escaneie o QR Code</h2>
+        <p class="payment-subtitle" id="pixDescription">Assim que o Mercado Pago confirmar, seus diamantes serão liberados.</p>
+        <div class="qr-wrap"><img id="pixQr" alt="QR Code PIX"></div>
+        <label>PIX Copia e Cola
+          <textarea id="pixCode" readonly rows="4"></textarea>
+        </label>
+        <button class="copy-pix" id="copyPix">COPIAR PIX</button>
+        <a class="ticket-link" id="ticketLink" target="_blank" rel="noopener" hidden>Abrir pagamento no Mercado Pago</a>
+        <div class="payment-status" id="paymentStatus"><span class="status-dot"></span><b>Aguardando pagamento...</b></div>
+      </div>
+      <div id="successStep" hidden class="success-step">
+        <div class="success-icon">✓</div>
+        <h2>Pagamento aprovado!</h2>
+        <p id="successText">Seus diamantes foram entregues.</p>
+        <button class="checkout" id="finishPayment">FINALIZAR</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
